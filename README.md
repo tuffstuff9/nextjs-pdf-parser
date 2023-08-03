@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js PDF Parser Template 📄🔍
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+I was having some trouble parsing PDFs in Next.js. I hope this template saves you some time and trouble. It's a basic `create-next-app` with PDF parsing implemented using the [pdf2json library](https://github.com/modesty/pdf2json) and file uploading facilitated by [FilePond](https://github.com/pqina/react-filepond).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Installation & Setup 🚀
+
+1.  **Clone the repository**:
+2.  `git clone [repository-url]`
+3.  **Navigate to the project directory**:
+4.  `cd nextjs-pdf-parser`
+5.  **Install dependencies**:
+6.  ```bash
+    npm install
+    # or
+    yarn install
+    ```
+7.  **Run the development server**:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+    Visit `http://localhost:3000` to view the application.
+
+## Usage 🖱
+
+Navigate to `http://localhost:3000` and use the FilePond uploader to select and upload a PDF. Once uploaded, the content of the PDF is parsed and printed to the server console (Note: it will not be printed to the browser log).
+
+## Technical Details 🛠
+
+- **nodeUtil is not defined Error**:
+
+  To bypass the `nodeUtil is not defined` error, the following configuration was added to `next.config.js`:
+
+```javascript
+const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ['pdf2json'],
+  },
+};
+
+module.exports = nextConfig;
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    See more details [here](https://github.com/modesty/pdf2json/issues/303)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Blank output from `pdfParser.getRawTextContent()`**:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  This issue might be due to incorrect type definitions. There are two potential solutions:
 
-## Learn More
+  1.  **Fix TypeScript definitions**: Update the type definition for PDFParser.
 
-To learn more about Next.js, take a look at the following resources:
+  2.  **Bypass type checking**: Instantiate PDFParser as shown:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+      `const pdfParser = new (PDFParser as any)(null, 1);`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  For more details, refer to my comment on [this GitHub issue](https://github.com/modesty/pdf2json/issues/273#issuecomment-1662587255).
 
-## Deploy on Vercel
+## Acknowledgements 🙏
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A special thanks to the following libraries and their contributors:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **[FilePond](https://pqina.nl/filepond/)**: For providing a seamless and user-friendly file uploading experience.
+- **[pdf2json](https://www.npmjs.com/package/pdf2json)**: For its efficient and robust PDF parsing capabilities.
+
+## License 📜
+
+MIT License

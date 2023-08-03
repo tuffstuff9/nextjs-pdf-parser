@@ -153,6 +153,16 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
+"@types/uuid@^9.0.2":
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-9.0.2.tgz#ede1d1b1e451548d44919dc226253e32a6952c4b"
+  integrity sha512-kNnC1GFBLuhImSnV7w4njQkUiJi0ZXUycu1rUaouPqiKlXkh77JKgdRnTAp1x5eBwcIwbtI+3otwzuIDEuDoxQ==
+
+"@xmldom/xmldom@^0.8.6":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.10.tgz#a1337ca426aa61cef9fe15b5b28e340a72f6fa99"
+  integrity sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==
+
 any-promise@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
@@ -312,6 +322,11 @@ fastq@^1.6.0:
   integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
+
+filepond@^4.30.4:
+  version "4.30.4"
+  resolved "https://registry.yarnpkg.com/filepond/-/filepond-4.30.4.tgz#036d87d9b0ab27d19fb5e302eae799df90e094e4"
+  integrity sha512-FCwsMvG9iiEs6uobdDrTaKsCgsqys0NuLgPPD8n37AYVYBiiDkrPkk9MSIU5rT2FahYcL1bScYI9huIPtlzqyA==
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -554,6 +569,13 @@ path-parse@^1.0.7:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
+pdf2json@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/pdf2json/-/pdf2json-3.0.4.tgz#8508800c8d07e4778d4247de4de49a7b641aa040"
+  integrity sha512-NKmSg78W5V/T3Qvp+TPkYeARdP/XzxBTlhRGdDMrOI1beyI72JxW5u4yy5825ge3opzu4HF0xDgg+HZbYvbr4g==
+  dependencies:
+    "@xmldom/xmldom" "^0.8.6"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -648,6 +670,11 @@ react-dom@18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-filepond@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/react-filepond/-/react-filepond-7.1.2.tgz#8f04d06396a59b5980dda479c095ed23e6d1f68b"
+  integrity sha512-vrlx9o/n+jGikh6jLey+PpUGYtEZn8MdeB6JFeX/5/N/Mu75IHG+MFQbv8R27bNXvS41mDtV9Fo5DG+s6siVIA==
 
 react@18.2.0:
   version "18.2.0"
@@ -809,6 +836,11 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+uuid@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
+  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 watchpack@2.4.0:
   version "2.4.0"
