@@ -2,7 +2,7 @@
 
 ## Introduction
 
-I was having some trouble parsing PDFs in Next.js, so I thought I would make this template for anyone else who was facing the same issues as me. I hope this template saves you some time and trouble. It's a basic `create-next-app` with PDF parsing implemented using the [pdf2json library](https://github.com/modesty/pdf2json) and file uploading facilitated by [FilePond](https://github.com/pqina/react-filepond).
+I was having some trouble parsing PDFs in Next.js, so I thought I would make this template for anyone else who was facing the same issues as me. I hope this template saves you some time and trouble. It's a basic `create-next-app` with PDF parsing implemented using the [pdf2json](https://github.com/modesty/pdf2json) library and file uploading facilitated by [FilePond](https://github.com/pqina/react-filepond).
 
 ## Installation & Setup 🚀
 
