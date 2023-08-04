@@ -46,7 +46,7 @@ const nextConfig = {
 module.exports = nextConfig;
 ```
 
-    See more details [here](https://github.com/modesty/pdf2json/issues/303)
+See more details [here](https://github.com/modesty/pdf2json/issues/303)
 
 - **Blank output from `pdfParser.getRawTextContent()`**:
 
