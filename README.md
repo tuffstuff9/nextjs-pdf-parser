@@ -1,5 +1,7 @@
 # Next.js PDF Parser Template 📄🔍
 
+https://github.com/tuffstuff9/nextjs-pdf-parser/assets/57072903/c9e5e5eb-ceeb-4947-b26c-11f87bb26312
+
 ## Introduction
 
 I was having some trouble parsing PDFs in Next.js, so I thought I would make this template for anyone else who was facing the same issues as me. I hope this template saves you some time and trouble. It's a basic `create-next-app` with PDF parsing implemented using the [pdf2json](https://github.com/modesty/pdf2json) library and file uploading facilitated by [FilePond](https://github.com/pqina/react-filepond).
