@@ -13,12 +13,13 @@ I was having some trouble parsing PDFs in Next.js, so I thought I would make thi
 3.  **Navigate to the project directory**:
 4.  `cd nextjs-pdf-parser`
 5.  **Install dependencies**:
-6.  ```bash
+6.  Windows only: In `app\api\upload\route.ts` on line 22, change `tempFilePath` to a valid path. Make sure it starts from the root drive, for example: `C:/coding/nextjs-pdf-parser/public/${fileName}.pdf`   
+7.  ```bash
     npm install
     # or
     yarn install
     ```
-7.  **Run the development server**:
+8.  **Run the development server**:
 
     ```bash
     npm run dev
